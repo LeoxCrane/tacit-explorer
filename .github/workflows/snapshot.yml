@@ -6,6 +6,13 @@ name: refresh data snapshot
 # their own origin. It only commits when the numbers actually change.
 
 on:
+  # run whenever the job or the script it runs changes, so a fresh clone verifies
+  # itself and the workflow shows up in the Actions list straight away
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/snapshot.yml"
+      - "tools/snapshot.mjs"
   schedule:
     - cron: "17,47 * * * *"   # twice an hour
   workflow_dispatch:
