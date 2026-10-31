@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Farms and relay · Tacit Explorer</title>
+<meta name="description" content="Relay state, provers, open board and the TAC launch farms." />
+<meta name="color-scheme" content="dark light" />
+<meta property="og:title" content="Farms and relay · Tacit Explorer" />
+<meta property="og:description" content="Relay state, provers, open board and the TAC launch farms." />
+<link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+<link rel="stylesheet" href="./styles.css" />
+<script>
+  // Set the theme before first paint so there is no flash of the wrong one.
+  (function () {
+    try {
+      var pref = localStorage.getItem('tacit-explorer-theme') || 'auto';
+      var resolved = pref;
+      if (pref === 'auto') {
+        resolved = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+      }
+      document.documentElement.dataset.theme = resolved;
+    } catch (e) { /* keep the markup default */ }
+  })();
+</script>
+</head>
+<body data-page="farms">
+<a class="skip" href="#main">Skip to content</a>
+<main id="main"></main>
+<noscript>
+  <p class="noscript">This explorer reads live chain data in the browser, so it needs JavaScript. Nothing is tracked or stored.</p>
+</noscript>
+<script type="module" src="./js/main.js"></script>
+</body>
+</html>

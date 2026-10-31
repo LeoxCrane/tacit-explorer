@@ -1,0 +1,43 @@
+name: refresh data snapshot
+
+# Most of the site reads live from the browser. Two sources cannot: tacitscan's
+# envelope index sends no CORS headers, and the pool index endpoint is slow, so
+# this job fetches both and commits a small JSON file the pages can load from
+# their own origin. It only commits when the numbers actually change.
+
+on:
+  schedule:
+    - cron: "17,47 * * * *"   # twice an hour
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: snapshot
+  cancel-in-progress: true
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Fetch data
+        run: node tools/snapshot.mjs
+
+      - name: Commit when something changed
+        run: |
+          if [ -z "$(git status --porcelain data/)" ]; then
+            echo "nothing new to commit"
+            exit 0
+          fi
+          git config user.name "snapshot-bot"
+          git config user.email "snapshot-bot@users.noreply.github.com"
+          git add data/snapshot.json
+          git commit -m "data: refresh snapshot"
+          git push

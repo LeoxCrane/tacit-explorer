@@ -1,0 +1,9 @@
+node_modules/
+.npm-cache/
+package-lock.json
+package.json
+
+*.log
+_scratch/
+.DS_Store
+Thumbs.db
