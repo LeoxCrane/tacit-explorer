@@ -53,3 +53,41 @@ export function fmtChange(value) {
   const sign = value > 0 ? '+' : '';
   return `${sign}${value.toFixed(2)}%`;
 }
+
+// BTC and ETH in dollars, for the header. CoinGecko first, Coinbase as a fallback:
+// both answer with CORS open, and neither needs a key.
+let majorsCache = { at: 0, value: null };
+
+export async function majorPrices({ maxAgeMs = 60000 } = {}) {
+  if (majorsCache.value && Date.now() - majorsCache.at < maxAgeMs) return majorsCache.value;
+
+  try {
+    const cg = await fetchJSON(
+      'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum&vs_currencies=usd',
+      { timeout: 10000 },
+    );
+    const btc = Number(cg.data?.bitcoin?.usd);
+    const eth = Number(cg.data?.ethereum?.usd);
+    if (cg.ok && btc > 0 && eth > 0) {
+      const value = { ok: true, btc, eth, source: 'coingecko' };
+      majorsCache = { at: Date.now(), value };
+      return value;
+    }
+  } catch { /* fall through to Coinbase */ }
+
+  try {
+    const [b, e] = await Promise.all([
+      fetchJSON('https://api.coinbase.com/v2/prices/BTC-USD/spot', { timeout: 10000 }),
+      fetchJSON('https://api.coinbase.com/v2/prices/ETH-USD/spot', { timeout: 10000 }),
+    ]);
+    const btc = Number(b.data?.data?.amount);
+    const eth = Number(e.data?.data?.amount);
+    if (b.ok && e.ok && btc > 0 && eth > 0) {
+      const value = { ok: true, btc, eth, source: 'coinbase' };
+      majorsCache = { at: Date.now(), value };
+      return value;
+    }
+  } catch { /* both sources down */ }
+
+  return { ok: false, error: 'no price source answered' };
+}

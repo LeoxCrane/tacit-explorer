@@ -14,7 +14,7 @@ import { esplora, scanBlock } from './bitcoin.js';
 import { loadSnapshot, tacit } from './tacit.js';
 import { decodeTacitAddress } from './tacit1.js';
 import { decodeTransaction } from './envelope.js';
-import { fmtChange, fmtUsdPrice, tacPrice } from './price.js';
+import { fmtChange, fmtUsdPrice, majorPrices, tacPrice } from './price.js';
 import {
   $, el, fmtCompact, fmtInt, fmtUnits, fmtUtc, hueOf, norm, short, timeAgo,
 } from './util.js';
@@ -342,10 +342,6 @@ ${RIBBON_HTML}
     holds real reserves on Bitcoin. Where a token reads zero, the asset exists only as confidential notes.
   </p>
 </section>
-<section class="card" id="price-card">
-  <header class="card-head"><h2>TAC price</h2><span class="card-tool" id="price-badge">n/a</span></header>
-  <div class="card-body" id="price-body">${SKELETON(3)}</div>
-</section>
 <section class="card" id="assets">
   <header class="card-head"><h2>Canonical set and the Bitcoin AMM</h2><span class="card-tool">supplies read live</span></header>
   <div class="card-body" id="assets-body">${SKELETON(5)}</div>
@@ -399,7 +395,7 @@ const FOOTER_HTML = `
       <li><a href="https://bitcoin-rpc.publicnode.com" target="_blank" rel="noopener">bitcoin-rpc.publicnode.com</a>: whole blocks, for the in-browser decoder</li>
       <li><a href="https://ethereum-rpc.publicnode.com" target="_blank" rel="noopener">ethereum-rpc.publicnode.com</a> and <a href="https://base-rpc.publicnode.com" target="_blank" rel="noopener">base</a>: pool getters, token supplies, XNS</li>
       <li><a href="https://tacitscan.io" target="_blank" rel="noopener">tacitscan.io</a>: envelope index and protocol counters, snapshotted by a scheduled job</li>
-      <li><a href="https://dexscreener.com" target="_blank" rel="noopener">dexscreener.com</a>: the TAC price, from its Uniswap pools</li>
+      <li><a href="https://www.coingecko.com" target="_blank" rel="noopener">coingecko.com</a> (and coinbase.com as a fallback): the BTC and ETH prices in the header</li>
       <li><a href="https://xns.name" target="_blank" rel="noopener">xns.name</a>: the name registry at <code>0x6e79…f74b</code></li>
     </ul>
   </div>
@@ -429,10 +425,8 @@ function mountChrome() {
   document.body.insertAdjacentHTML('afterbegin', `
 <div class="util-bar">
   <span class="util-title">Tacit: confidential assets on Bitcoin, Ethereum and Base</span>
-  <a class="util-item util-price" href="./assets.html" title="TAC price from its public Uniswap pools"><span>TAC</span> <b id="util-tac">n/a</b></a>
-  <span class="util-item">BTC <b id="util-btc">n/a</b></span>
-  <span class="util-item">ETH <b id="util-eth">n/a</b></span>
-  <span class="util-item">BASE <b id="util-base">n/a</b></span>
+  <span class="util-item" title="Bitcoin price in dollars"><span>BTC</span> <b id="util-btc">n/a</b></span>
+  <span class="util-item" title="Ethereum price in dollars"><span>ETH</span> <b id="util-eth">n/a</b></span>
   <span class="util-spacer"></span>
   <div class="theme-menu" id="theme-menu">
     <button class="util-button" id="theme-button" type="button" aria-haspopup="menu" aria-expanded="false">
@@ -605,6 +599,7 @@ async function refreshAll({ needs = NEEDS[PAGE] || NEEDS.home } = {}) {
     track('base head', readBlockNumber('base')),
     track('eth head', readBlockNumber('ethereum')),
     track('tac price', tacPrice()),
+    track('btc and eth price', majorPrices()),
   ];
   if (wantFarms) {
     live.push(
@@ -616,7 +611,7 @@ async function refreshAll({ needs = NEEDS[PAGE] || NEEDS.home } = {}) {
     );
   }
 
-  const [status, relay, tip, blocksRes, poolChain, baseBlockRes, ethBlockRes, price, ...rest] = await Promise.all(live);
+  const [status, relay, tip, blocksRes, poolChain, baseBlockRes, ethBlockRes, price, majors, ...rest] = await Promise.all(live);
 
   if (status.ok) state.status = status.data;
   if (relay.ok) state.relay = relay.data;
@@ -627,6 +622,7 @@ async function refreshAll({ needs = NEEDS[PAGE] || NEEDS.home } = {}) {
   if (ethBlockRes.ok) state.ethBlock = ethBlockRes.block;
   // tacPrice resolves with { ok, usd, ... } directly; track() only records it.
   state.price = price.ok && price.usd !== undefined ? price : null;
+  state.majors = majors && majors.ok ? majors : null;
 
   if (wantFarms) {
     const [farm, farmHealth, economics, board, openJobs] = rest;
@@ -801,51 +797,8 @@ function renderStats() {
     node.textContent = text;
     if (tone) node.className = tone;
   };
-  setUtil('#util-tac', price ? fmtUsdPrice(price.usd) : 'n/a', changeTone === 'up' ? 'up' : changeTone === 'down' ? 'down' : '');
-  setUtil('#util-btc', state.bitcoinTip ? fmtInt(state.bitcoinTip) : 'n/a');
-  setUtil('#util-eth', state.ethBlock ? fmtCompact(state.ethBlock) : 'n/a');
-  setUtil('#util-base', state.baseBlock ? fmtCompact(state.baseBlock) : 'n/a');
-}
-
-/** Full price card for the assets page: venue, depth, and where it comes from. */
-function renderPrice() {
-  const host = $('#price-body');
-  const badge = $('#price-badge');
-  if (!host) return;
-  const price = state.price;
-  if (!price) {
-    if (badge) { badge.textContent = 'unavailable'; badge.className = 'card-tool bad'; }
-    host.replaceChildren(unavailable('no public TAC pair answered', [
-      external('https://dexscreener.com/search?q=TAC', 'dexscreener'),
-    ]));
-    return;
-  }
-  if (badge) {
-    badge.textContent = `${price.dexId}${price.labels?.length ? ` ${price.labels.join(' ')}` : ''} · ${price.quote}`;
-    badge.className = 'card-tool';
-  }
-  const changeTone = typeof price.change24h === 'number' ? (price.change24h >= 0 ? 'ok' : 'bad') : '';
-  host.replaceChildren(
-    el('div', { class: 'price-hero' }, [
-      el('div', { class: 'price-now' }, [fmtUsdPrice(price.usd)]),
-      fmtChange(price.change24h)
-        ? el('div', { class: `price-change ${changeTone}` }, [fmtChange(price.change24h), el('span', {}, [' 24h'])])
-        : el('div', { class: 'price-change' }, [el('span', {}, ['no 24h history in this pool'])]),
-    ]),
-    el('div', { class: 'grid-mini' }, [
-      statBlock('market cap', price.fdv ? money(price.fdv) : 'n/a', 'at ERC20 supply'),
-      statBlock('24h volume', price.volume24h !== null ? money(price.volume24h) : 'n/a', 'public pools'),
-      statBlock('pool depth', price.liquidityUsd !== null ? money(price.liquidityUsd) : 'n/a', 'thin market, size carefully'),
-    ]),
-    el('p', {}, [
-      'Read from the deepest public TAC pool on ',
-      price.dexId || 'uniswap',
-      price.quote ? ` against ${price.quote}` : '',
-      ', through the ',
-      external(price.url || 'https://dexscreener.com', 'DexScreener'),
-      ' API. TAC is not listed on an oracle, so this is a pool price, not a feed: it moves with the pool, and the pool is small.',
-    ]),
-  );
+  setUtil('#util-btc', state.majors ? fmtUsdPrice(state.majors.btc) : 'n/a');
+  setUtil('#util-eth', state.majors ? fmtUsdPrice(state.majors.eth) : 'n/a');
 }
 
 /** The directory of sections, so the things that matter are not all on one page. */
@@ -2029,7 +1982,6 @@ function renderAll() {
   renderBridge();
   renderPool();
   renderAssets();
-  renderPrice();
   renderPrivacy();
   renderRelay();
   renderQuickLinks();
