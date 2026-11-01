@@ -14,7 +14,7 @@ import { esplora, scanBlock } from './bitcoin.js';
 import { loadSnapshot, tacit } from './tacit.js';
 import { decodeTacitAddress } from './tacit1.js';
 import { decodeTransaction } from './envelope.js';
-import { fmtChange, fmtUsdPrice, majorPrices, tacPrice } from './price.js';
+import { fmtUsdPrice, majorPrices, tacPrice } from './price.js';
 import {
   $, el, fmtCompact, fmtInt, fmtUnits, fmtUtc, hueOf, norm, short, timeAgo,
 } from './util.js';
@@ -758,28 +758,12 @@ function renderStats() {
   if (!host) return;
   const s = state.status;
   const relay = state.relay;
-  const price = state.price;
   const totals = state.snapshot?.bitcoin?.totals;
   const counts = state.poolIndex?.counts;
   const lag = s?.lagBlocks;
-  const change = price?.change24h;
-  const changeTone = typeof change === 'number' ? (change >= 0 ? 'up' : 'down') : null;
   const relayTone = !relay ? 'bad' : relay.state === 'ok' || relay.state === 'busy' ? 'ok' : relay.state === 'down' ? 'bad' : 'warn';
-  const cap = price?.fdv ?? (price?.usd && state.supplies[norm(ASSETS[0].id)]
-    ? price.usd * Number(state.supplies[norm(ASSETS[0].id)] / 10n ** 18n)
-    : null);
 
   host.replaceChildren(
-    // a missing pair means no price cell at all, rather than a cell that says n/a
-    ...(price
-      ? [
-        statCell('TAC price', fmtUsdPrice(price.usd),
-          fmtChange(change) ? `${fmtChange(change)} 24h` : `vs ${price.quote || 'ETH'} on ${price.dexId}`,
-          null, changeTone),
-        statCell('Market cap', cap ? money(cap) : 'n/a',
-          price?.volume24h ? `${money(price.volume24h)} 24h volume` : 'at ERC20 supply'),
-      ]
-      : []),
     statCell('Envelopes', totals?.envelopes ? fmtInt(totals.envelopes) : 'n/a',
       totals?.assets ? `${fmtInt(totals.assets)} assets indexed` : 'indexed by tacitscan'),
     statCell('Pool transactions', state.poolIndex?.total ? fmtInt(state.poolIndex.total) : 'n/a',
