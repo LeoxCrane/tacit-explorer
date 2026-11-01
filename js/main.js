@@ -482,7 +482,15 @@ function systemTheme() {
   try { return matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark'; } catch { return 'dark'; }
 }
 function themePreference() {
+  const forced = urlTheme();
+  if (forced) return forced;
   try { return localStorage.getItem(THEME_KEY) || 'auto'; } catch { return 'auto'; }
+}
+function urlTheme() {
+  try {
+    const t = new URLSearchParams(location.search).get('theme');
+    return THEMES.includes(t) ? t : null;
+  } catch { return null; }
 }
 function resolvedTheme(pref = themePreference()) {
   return pref === 'auto' ? systemTheme() : (THEMES.includes(pref) ? pref : 'dark');

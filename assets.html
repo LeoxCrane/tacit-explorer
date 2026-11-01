@@ -14,7 +14,9 @@
   // Set the theme before first paint so there is no flash of the wrong one.
   (function () {
     try {
-      var pref = localStorage.getItem('tacit-explorer-theme') || 'auto';
+      var q = new URLSearchParams(location.search).get('theme');
+      var pref = (q === 'light' || q === 'dim' || q === 'dark') ? q
+        : (localStorage.getItem('tacit-explorer-theme') || 'auto');
       var resolved = pref;
       if (pref === 'auto') {
         resolved = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
