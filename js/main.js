@@ -770,13 +770,16 @@ function renderStats() {
     : null);
 
   host.replaceChildren(
-    statCell('TAC price', price ? fmtUsdPrice(price.usd) : 'n/a',
-      price
-        ? (fmtChange(change) ? `${fmtChange(change)} 24h` : `vs ${price.quote || 'ETH'} on ${price.dexId}`)
-        : 'no public pair',
-      null, changeTone),
-    statCell('Market cap', cap ? money(cap) : 'n/a',
-      price?.volume24h ? `${money(price.volume24h)} 24h volume` : 'at ERC20 supply'),
+    // a missing pair means no price cell at all, rather than a cell that says n/a
+    ...(price
+      ? [
+        statCell('TAC price', fmtUsdPrice(price.usd),
+          fmtChange(change) ? `${fmtChange(change)} 24h` : `vs ${price.quote || 'ETH'} on ${price.dexId}`,
+          null, changeTone),
+        statCell('Market cap', cap ? money(cap) : 'n/a',
+          price?.volume24h ? `${money(price.volume24h)} 24h volume` : 'at ERC20 supply'),
+      ]
+      : []),
     statCell('Envelopes', totals?.envelopes ? fmtInt(totals.envelopes) : 'n/a',
       totals?.assets ? `${fmtInt(totals.assets)} assets indexed` : 'indexed by tacitscan'),
     statCell('Pool transactions', state.poolIndex?.total ? fmtInt(state.poolIndex.total) : 'n/a',
