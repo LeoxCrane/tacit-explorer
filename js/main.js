@@ -623,6 +623,7 @@ async function refreshAll({ needs = NEEDS[PAGE] || NEEDS.home } = {}) {
   // tacPrice resolves with { ok, usd, ... } directly; track() only records it.
   state.price = price.ok && price.usd !== undefined ? price : null;
   state.majors = majors && majors.ok ? majors : null;
+  renderUtilPrices();
 
   if (wantFarms) {
     const [farm, farmHealth, economics, board, openJobs] = rest;
@@ -777,15 +778,16 @@ function renderStats() {
     statCell('Relay', relay ? relay.state : 'n/a',
       relay ? (relay.proving ? 'proving now' : 'idle') : '', relayTone),
   );
+}
 
-  const setUtil = (id, text, tone) => {
-    const node = $(id);
-    if (!node) return;
-    node.textContent = text;
-    if (tone) node.className = tone;
+/** Header prices. Runs on every page, not just the one with the stat strip. */
+function renderUtilPrices() {
+  const set = (sel, text) => {
+    const node = $(sel);
+    if (node) node.textContent = text;
   };
-  setUtil('#util-btc', state.majors ? fmtUsdPrice(state.majors.btc) : 'n/a');
-  setUtil('#util-eth', state.majors ? fmtUsdPrice(state.majors.eth) : 'n/a');
+  set('#util-btc', state.majors ? fmtUsdPrice(state.majors.btc) : 'n/a');
+  set('#util-eth', state.majors ? fmtUsdPrice(state.majors.eth) : 'n/a');
 }
 
 /** The directory of sections, so the things that matter are not all on one page. */
