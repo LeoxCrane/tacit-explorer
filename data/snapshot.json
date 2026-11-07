@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T20:13:58.821Z",
+  "generatedAt": "2026-11-07T23:38:18.276Z",
   "bitcoin": {
     "feed": [
       {
@@ -12,6 +12,17 @@
         "blockTime": null,
         "chainStatus": "mempool",
         "firstSeenAt": "2026-11-05T09:39:41.725Z"
+      },
+      {
+        "txid": "6fa34dd32dea30a0b6c7f6666c653fe9e15c73ab9d8b9976d8902e6b43163ca2",
+        "opcode": "T_CXFER_BPP",
+        "assetId": "f0bbe868af10c6c67652a99709bf32048d1aa7194efe3e9a1ef1bde43f94762b",
+        "ticker": "TAC",
+        "displayName": "TAC#f0bbe868",
+        "blockHeight": 974991,
+        "blockTime": "2026-11-07T21:48:46.000Z",
+        "chainStatus": "confirmed",
+        "firstSeenAt": "2026-11-07T22:24:57.839Z"
       },
       {
         "txid": "67513bfa20fe8711713deb0d678934dd5b8267368e4c217f58d0eb076f0ff77f",
@@ -265,91 +276,32 @@
         "blockTime": "2026-11-06T21:24:54.000Z",
         "chainStatus": "confirmed",
         "firstSeenAt": "2026-11-06T21:45:33.428Z"
-      },
-      {
-        "txid": "a0a99d201be01b78919bb816325d6d70e03d15e31c580c273fc134dcb78bb1b1",
-        "opcode": "T_CXFER_BPP",
-        "assetId": "f0bbe868af10c6c67652a99709bf32048d1aa7194efe3e9a1ef1bde43f94762b",
-        "ticker": "TAC",
-        "displayName": "TAC#f0bbe868",
-        "blockHeight": 974857,
-        "blockTime": "2026-11-06T20:53:31.000Z",
-        "chainStatus": "confirmed",
-        "firstSeenAt": "2026-11-06T21:24:57.526Z"
       }
     ],
     "totals": {
-      "envelopes": 266679,
+      "envelopes": 266680,
       "assets": 100,
       "etches": 83,
-      "indexedTo": 974976,
+      "indexedTo": 974996,
       "tpetches": 17
     }
   },
   "pool": {
     "index": {
-      "total": 15349,
+      "total": 15353,
       "deployBlock": 25998736,
-      "indexedToBlock": 26365291,
-      "headBlock": 26365297,
+      "indexedToBlock": 26366308,
+      "headBlock": 26366314,
       "synced": true,
       "counts": {
-        "leaves": 6120,
-        "nullifiers": 6272,
+        "leaves": 6121,
+        "nullifiers": 6273,
         "wraps": 3779,
         "crossOuts": 21,
-        "lockLeaves": 32,
-        "lockNullifiers": 31
+        "lockLeaves": 33,
+        "lockNullifiers": 32
       },
       "entries": [
-        {
-          "seq": 15309,
-          "type": "leaves",
-          "block": 26363377,
-          "tx": "0x90137c7c309d6db72f9bc0669061921cc931d88831400987853d5b96731b041c",
-          "logIndex": 1591,
-          "first": 6100,
-          "leaves": [
-            "0x76c1221d5894b1a3ff4d15cf39e86cc62b57b1979372a6e66347e5c679217a60"
-          ],
-          "memos": [
-            "0x026914d6f392276fe546f7aa74b0dc44e8275929e2f8026f9482e3b675136f4a529ef7098f921be3cc828c224fb1fc58e80343bc17488a8f223b04e9a3fe95728314bc25b737b4f305a08dc112d2f125aea82263d2709b29fe793141c346fd902d86c1f50c6069842e3a2ed209a6a2e160d0e25632f22b4090270c37d3fe3064f57d78fb33da598dcbcf720eab8643e4299309331a4b0c28b360336215e00778759b3942f30a2fc679"
-          ]
-        },
-        {
-          "seq": 15310,
-          "type": "nullifiers",
-          "block": 26363384,
-          "tx": "0x1e837db1c97edffb6b3094d90f5b65fc49ddcd4a558de1e4465c2b3914f1ff18",
-          "logIndex": 1271,
-          "nullifiers": [
-            "0x6a7ac17d3f68095fb16a74fc9299eed22b105d731627daf001655d61a1dd1a3c"
-          ]
-        },
-        {
-          "seq": 15311,
-          "type": "wrap",
-          "block": 26363388,
-          "tx": "0xce7f260fdf5d39ec242883e7035998ef84ec793db703f32842c21fd22314e6eb",
-          "logIndex": 1789,
-          "depositId": "0x1672cc5ce87471697b6d1af5d8feab43c17f916237e0ed1d807f529051a457d5",
-          "assetId": "0x3cba71e1114af183cdeacc6b8457a474d17529fd28704480ca799d0d03126f34",
-          "amount": "4000000000000000000"
-        },
-        {
-          "seq": 15312,
-          "type": "leaves",
-          "block": 26363393,
-          "tx": "0x25e8adb28e930684bd0b15c7a91c667b906b93e36082b7af2a97a3ef2ded9c82",
-          "logIndex": 1166,
-          "first": 6101,
-          "leaves": [
-            "0x9a0e17e7126a6d01027ae5c255409b8af43b6d77305cad817ab848faa4918a34"
-          ],
-          "memos": [
-            "0x022ca0ff37ee7cc9c158c939ef46c37a2e24628e108fd6e5fbc8190d1cb2412231a6419cda13a95142208df020221a27c568d910a67615bc1caa041428fa1be3b1da53ef9b3cb5947640354f2313027d015a3172274ff1f02f9efc6b6c8a5f09b8429a42e59a6244594470dc449ed1813322addd504f59f60298e1d465ad4bcba93723522ef5176748ba29af958c7b1737bb97409946361725950001ddf547a78c0df6f92eac3e06b9"
-          ]
-        },
         {
           "seq": 15313,
           "type": "nullifiers",
@@ -793,6 +745,60 @@
           "memos": [
             "0x03e869f084926e6167bd1ea3939dedb80cd80df87f0d4e9cddde8485f70f363f80a92d386fce8a60fe561636e60b40c89e313b703d9b1387daa9ac34481e0a1d54337bcb6105869196395356a3545f3b5ff68e1acf6682eff42e899bd3c2c56efd7a6aaff3b3e29afbfe5bea6232eb7408c35381eecf280965228885e1871cdfd32740a7ec5b102d2d855dfbdc17c56bb3f0ca15bfeceb2a95de7248e792ea18cdbd4742ead9367624"
           ]
+        },
+        {
+          "seq": 15349,
+          "type": "nullifiers",
+          "block": 26365311,
+          "tx": "0x66a7b5bc87cb7f44c60e3a0b4b95747091bdfa520afce54df0e4e766d1c36b0b",
+          "logIndex": 208,
+          "nullifiers": [
+            "0xf3106dece479c6685c58b30f36f870f326f793200b00ccdc5cbe2d5e0612ac49"
+          ]
+        },
+        {
+          "seq": 15350,
+          "type": "locks",
+          "block": 26365311,
+          "tx": "0x66a7b5bc87cb7f44c60e3a0b4b95747091bdfa520afce54df0e4e766d1c36b0b",
+          "logIndex": 209,
+          "lockLeaves": [
+            "0x2ac5f32946191ce7d13ac1a7255cea6ec138e6e3ac262648b6ebb5822451dbb5"
+          ],
+          "lockMemos": [
+            "0x0210feabfb7bb9b1fa306440eac3fa8f3f10b1683f030020faac62848e5e0397c1c29f175ddd1bc6a919d48b9382e4db06f36797d2649eb4450b07c4f0760437627dea244fd59bedc707aec19db90b94431be6f28ec3236296bdf6a008f45a914c655f464481ac6c3a1fa2e9c223c3f6f90439d152bec3eadcf286f81594420a401cb5a5ffabcc27bb0378341db41292fe8836258ee0b303cc49c3611be61264e947ec17fd9ca75e97d7c22c90fc2e8adf0b8ee41df1f748238080f677ccd3296044c1a7891ac51516e840c31664cc6ed8dcee78c5049d56efcf7cf86120743f1074b706545687e7babd3e29bff9dd869d23c00f7a51985f406fe5aeba4ae7a476f0373697a389b76d727bd82db5860b14af94f8a4081a8b7233307208a100950e4bc910c2e958cd87f06bd18fc954342281fc8be618aa8f9a4617a24dcf5fbfddc9"
+          ],
+          "lockNullifiers": [],
+          "via": "pool",
+          "first": 32
+        },
+        {
+          "seq": 15351,
+          "type": "leaves",
+          "block": 26366218,
+          "tx": "0xd0f54e220f11c04e5250a26cbd082054dbe0a30ba99cb8fff753bfcdf546caeb",
+          "logIndex": 233,
+          "first": 6120,
+          "leaves": [
+            "0xecb44e4006dd9734b391f424b6d218b7c8b7d7e2d86042f58eccf7dd960d737d"
+          ],
+          "memos": [
+            "0x02a977ee17677633253e8159db31323445708c4a211e8e6a452e190510daf3f07f32e812502b58b4ce944f2f77256ec31a6f38efdd8c272347fdcc2be34ec78bf2bcb9b525533a84bace34cc8722f6dde38c8391b384c7d84bf636433dbdafa765b9918d9047df2d942182dffc25892ea77d911691eb947b15a1d67d4a98044e1b88dd977b34bdec740796401dc2c681a0d9613ae554d4d1a34e180daadd8632e00deb54a639378225"
+          ]
+        },
+        {
+          "seq": 15352,
+          "type": "locks",
+          "block": 26366218,
+          "tx": "0xd0f54e220f11c04e5250a26cbd082054dbe0a30ba99cb8fff753bfcdf546caeb",
+          "logIndex": 233,
+          "lockLeaves": [],
+          "lockMemos": [],
+          "lockNullifiers": [
+            "0x57daae6888308755b1066e77a796e8e268c1e676bfaa373588d6c7dfee50eb57"
+          ],
+          "via": "pool",
+          "first": 33
         }
       ]
     }
@@ -800,8 +806,8 @@
   "reflection": {
     "status": {
       "network": "mainnet",
-      "attestedHeight": 974951,
-      "tipHeight": 974951,
+      "attestedHeight": 974971,
+      "tipHeight": 974971,
       "lagBlocks": 0,
       "confirmations": 24,
       "foldedCrossoutCount": 19,
@@ -812,9 +818,9 @@
       "burnDeposits": 127,
       "burnsAwaitingBundle": 0,
       "oldestAwaitingHeight": null,
-      "updatedAt": "2026-11-07T20:13:56.471Z"
+      "updatedAt": "2026-11-07T23:38:18.237Z"
     },
-    "height": 974951,
+    "height": 974971,
     "noteLeaves": 9153,
     "liveTriples": 3747,
     "cbtcLockTriples": 26,
