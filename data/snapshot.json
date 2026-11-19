@@ -1,7 +1,95 @@
 {
-  "generatedAt": "2026-11-19T17:21:47.188Z",
+  "generatedAt": "2026-11-19T23:50:02.938Z",
   "bitcoin": {
     "feed": [
+      {
+        "txid": "bd3a74bf9e58bd5ec64d25da9a556fd7b62eaa5e2673f051096824c40cd75e00",
+        "opcode": "T_CXFER_BPP",
+        "assetId": "f0bbe868af10c6c67652a99709bf32048d1aa7194efe3e9a1ef1bde43f94762b",
+        "ticker": "TAC",
+        "displayName": "TAC#f0bbe868",
+        "blockHeight": 976652,
+        "blockTime": "2026-11-19T23:21:54.000Z",
+        "chainStatus": "confirmed",
+        "firstSeenAt": "2026-11-19T23:46:21.348Z"
+      },
+      {
+        "txid": "a626ba732951dcce3547d51718eb6f372699d3d78d2eebabb440722adca9f4b9",
+        "opcode": "T_CXFER_BPP",
+        "assetId": "f0bbe868af10c6c67652a99709bf32048d1aa7194efe3e9a1ef1bde43f94762b",
+        "ticker": "TAC",
+        "displayName": "TAC#f0bbe868",
+        "blockHeight": 976628,
+        "blockTime": "2026-11-19T20:01:20.000Z",
+        "chainStatus": "confirmed",
+        "firstSeenAt": "2026-11-19T20:24:43.031Z"
+      },
+      {
+        "txid": "de71355a5364a4c60f1ce30b00499dbe08b800f16535243a3b7822da83711937",
+        "opcode": "T_CXFER_BPP",
+        "assetId": "f0bbe868af10c6c67652a99709bf32048d1aa7194efe3e9a1ef1bde43f94762b",
+        "ticker": "TAC",
+        "displayName": "TAC#f0bbe868",
+        "blockHeight": 976628,
+        "blockTime": "2026-11-19T20:01:20.000Z",
+        "chainStatus": "confirmed",
+        "firstSeenAt": "2026-11-19T20:24:43.031Z"
+      },
+      {
+        "txid": "2985b7bed389124374cbd86914a9899ae4de47962446d20c76481e7a2a7d1706",
+        "opcode": "T_CXFER_BPP",
+        "assetId": "f0bbe868af10c6c67652a99709bf32048d1aa7194efe3e9a1ef1bde43f94762b",
+        "ticker": "TAC",
+        "displayName": "TAC#f0bbe868",
+        "blockHeight": 976628,
+        "blockTime": "2026-11-19T20:01:20.000Z",
+        "chainStatus": "confirmed",
+        "firstSeenAt": "2026-11-19T20:24:43.031Z"
+      },
+      {
+        "txid": "d8a9d122771f0e0c5ba7c46754b4584f19726e14f68f12cc2a5ff936d959e623",
+        "opcode": "T_POOL_BRIDGE_BURN",
+        "assetId": "f0bbe868af10c6c67652a99709bf32048d1aa7194efe3e9a1ef1bde43f94762b",
+        "ticker": "TAC",
+        "displayName": "TAC#f0bbe868",
+        "blockHeight": 976626,
+        "blockTime": "2026-11-19T19:32:19.000Z",
+        "chainStatus": "confirmed",
+        "firstSeenAt": "2026-11-19T20:05:07.339Z"
+      },
+      {
+        "txid": "d8a6509bf4e7f0ad0812f1cc9b04ce6a138640b31bf48860eb708a4b427962a7",
+        "opcode": "T_CXFER_BPP",
+        "assetId": "f0bbe868af10c6c67652a99709bf32048d1aa7194efe3e9a1ef1bde43f94762b",
+        "ticker": "TAC",
+        "displayName": "TAC#f0bbe868",
+        "blockHeight": 976615,
+        "blockTime": "2026-11-19T17:19:59.000Z",
+        "chainStatus": "confirmed",
+        "firstSeenAt": "2026-11-19T17:31:51.853Z"
+      },
+      {
+        "txid": "0fb2bc7e22ccac943a26282b5b87e99cbae0cc1dcd8902937e959100e3a078b6",
+        "opcode": "T_CXFER_BPP",
+        "assetId": "f0bbe868af10c6c67652a99709bf32048d1aa7194efe3e9a1ef1bde43f94762b",
+        "ticker": "TAC",
+        "displayName": "TAC#f0bbe868",
+        "blockHeight": 976614,
+        "blockTime": "2026-11-19T17:14:58.000Z",
+        "chainStatus": "confirmed",
+        "firstSeenAt": "2026-11-19T17:29:48.638Z"
+      },
+      {
+        "txid": "24f5d840f85fbcd1b9fb93f2c862117230df01ca4884f664382f01ecf041a0b6",
+        "opcode": "T_CXFER_BPP",
+        "assetId": "f0bbe868af10c6c67652a99709bf32048d1aa7194efe3e9a1ef1bde43f94762b",
+        "ticker": "TAC",
+        "displayName": "TAC#f0bbe868",
+        "blockHeight": 976613,
+        "blockTime": "2026-11-19T17:07:43.000Z",
+        "chainStatus": "confirmed",
+        "firstSeenAt": "2026-11-19T17:23:30.835Z"
+      },
       {
         "txid": "71cfe4dac58a32e81905e526243c6b3dd5649408dfdca8c0727c18a0b121a328",
         "opcode": "T_AXFER",
@@ -188,628 +276,511 @@
         "blockTime": "2026-11-19T12:35:23.000Z",
         "chainStatus": "confirmed",
         "firstSeenAt": "2026-11-19T13:44:02.355Z"
-      },
-      {
-        "txid": "2f6e0cb5d1bec15e79108e18713eaf2a31a8ee4f3f0574938a20c882b1b8df50",
-        "opcode": "T_BTC_SPEND",
-        "assetId": "f0bbe868af10c6c67652a99709bf32048d1aa7194efe3e9a1ef1bde43f94762b",
-        "ticker": "TAC",
-        "displayName": "TAC#f0bbe868",
-        "blockHeight": 976585,
-        "blockTime": "2026-11-19T12:18:43.000Z",
-        "chainStatus": "confirmed",
-        "firstSeenAt": "2026-11-19T12:48:13.453Z"
-      },
-      {
-        "txid": "313a07d476a3e19ae6123320c676ece48e32f6a705c444c4994ce1d4e80099a6",
-        "opcode": "T_POOL_BRIDGE_BURN",
-        "assetId": "f0bbe868af10c6c67652a99709bf32048d1aa7194efe3e9a1ef1bde43f94762b",
-        "ticker": "TAC",
-        "displayName": "TAC#f0bbe868",
-        "blockHeight": 976580,
-        "blockTime": "2026-11-19T11:49:37.000Z",
-        "chainStatus": "confirmed",
-        "firstSeenAt": "2026-11-19T12:11:52.736Z"
-      },
-      {
-        "txid": "9f6f49a560515d8eb3e7656fcefbdf70826e4e2c6ef71179c3c13b3976488719",
-        "opcode": "T_POOL_BRIDGE_BURN",
-        "assetId": "f0bbe868af10c6c67652a99709bf32048d1aa7194efe3e9a1ef1bde43f94762b",
-        "ticker": "TAC",
-        "displayName": "TAC#f0bbe868",
-        "blockHeight": 976579,
-        "blockTime": "2026-11-19T11:39:29.000Z",
-        "chainStatus": "confirmed",
-        "firstSeenAt": "2026-11-19T12:06:23.635Z"
-      },
-      {
-        "txid": "9a6698404c86757f02324f0787777a68186841c5c5e656ce17dfa6bfa9ab6718",
-        "opcode": "T_POOL_BRIDGE_BURN",
-        "assetId": "f0bbe868af10c6c67652a99709bf32048d1aa7194efe3e9a1ef1bde43f94762b",
-        "ticker": "TAC",
-        "displayName": "TAC#f0bbe868",
-        "blockHeight": 976579,
-        "blockTime": "2026-11-19T11:39:29.000Z",
-        "chainStatus": "confirmed",
-        "firstSeenAt": "2026-11-19T12:06:23.635Z"
-      },
-      {
-        "txid": "a8cb6ae1ed45587eb9a7d0ed529cbbf6f9fdccca7353380c9b84740a82b4e88b",
-        "opcode": "T_CXFER_BPP",
-        "assetId": "f0bbe868af10c6c67652a99709bf32048d1aa7194efe3e9a1ef1bde43f94762b",
-        "ticker": "TAC",
-        "displayName": "TAC#f0bbe868",
-        "blockHeight": 976576,
-        "blockTime": "2026-11-19T11:25:35.000Z",
-        "chainStatus": "confirmed",
-        "firstSeenAt": "2026-11-19T11:39:11.850Z"
-      },
-      {
-        "txid": "02a53fe60e6bb69e1450a1d919cd8f5f5ecd31456241d28b3d47e881f2542dda",
-        "opcode": "T_CXFER_BPP",
-        "assetId": "f0bbe868af10c6c67652a99709bf32048d1aa7194efe3e9a1ef1bde43f94762b",
-        "ticker": "TAC",
-        "displayName": "TAC#f0bbe868",
-        "blockHeight": 976573,
-        "blockTime": "2026-11-19T11:04:30.000Z",
-        "chainStatus": "confirmed",
-        "firstSeenAt": "2026-11-19T11:26:17.949Z"
-      },
-      {
-        "txid": "58fc58e49bab3f91127c70385b472377e3184054a89858843c2abe2c7f7daf26",
-        "opcode": "T_CXFER_BPP",
-        "assetId": "f0bbe868af10c6c67652a99709bf32048d1aa7194efe3e9a1ef1bde43f94762b",
-        "ticker": "TAC",
-        "displayName": "TAC#f0bbe868",
-        "blockHeight": 976572,
-        "blockTime": "2026-11-19T11:02:12.000Z",
-        "chainStatus": "confirmed",
-        "firstSeenAt": "2026-11-19T11:07:27.353Z"
-      },
-      {
-        "txid": "fb3d3fffa6d125c2cc23620f3f8ca64be7fffcadcffea8a7ac20d9b9ad7af9d0",
-        "opcode": "T_CXFER_BPP",
-        "assetId": "f0bbe868af10c6c67652a99709bf32048d1aa7194efe3e9a1ef1bde43f94762b",
-        "ticker": "TAC",
-        "displayName": "TAC#f0bbe868",
-        "blockHeight": 976567,
-        "blockTime": "2026-11-19T10:37:04.000Z",
-        "chainStatus": "confirmed",
-        "firstSeenAt": "2026-11-19T10:50:00.833Z"
       }
     ],
     "totals": {
-      "envelopes": 268329,
+      "envelopes": 268337,
       "assets": 100,
       "etches": 83,
-      "indexedTo": 976612,
+      "indexedTo": 976652,
       "tpetches": 17
     }
   },
   "pool": {
     "index": {
-      "total": 21497,
+      "total": 21593,
       "deployBlock": 25998736,
-      "indexedToBlock": 26450584,
-      "headBlock": 26450590,
+      "indexedToBlock": 26452520,
+      "headBlock": 26452526,
       "synced": true,
       "counts": {
-        "leaves": 8774,
-        "nullifiers": 8964,
-        "wraps": 4747,
+        "leaves": 8824,
+        "nullifiers": 9026,
+        "wraps": 4750,
         "crossOuts": 37,
-        "lockLeaves": 259,
-        "lockNullifiers": 252
+        "lockLeaves": 261,
+        "lockNullifiers": 254
       },
       "entries": [
         {
-          "seq": 21457,
+          "seq": 21553,
           "type": "nullifiers",
-          "block": 26448809,
-          "tx": "0xc77022f9a38d9e71e394f9bd81e2cc62c4c22156d024f02c7f89644785d469eb",
-          "logIndex": 2051,
+          "block": 26451487,
+          "tx": "0xb097756551cbcd25897eda96a5068f6efa542913436cac13e185ea5a8388d06b",
+          "logIndex": 214,
           "nullifiers": [
-            "0x55a74d9b73ddb0d66a3ce59738bb786736083e1c7f34c31eb9e5edd275dcf851"
+            "0xe45aa939a61ee624cb640671a3ce68b1002aaf67466a0422f83fc3713230fe15"
           ]
         },
         {
-          "seq": 21458,
-          "type": "wrap",
-          "block": 26448810,
-          "tx": "0x467bb417dc69085b626f4615fcf295fd779e371c723d679883e62d2996016f35",
-          "logIndex": 1134,
-          "depositId": "0x39656f25db515a52c93d7399b369cb8891daa037426be0dbe9c6f8f71bc61af0",
-          "assetId": "0x3cba71e1114af183cdeacc6b8457a474d17529fd28704480ca799d0d03126f34",
-          "amount": "2500000000000000000"
+          "seq": 21554,
+          "type": "nullifiers",
+          "block": 26451491,
+          "tx": "0x5a28e454330bc3a1d62695aa996241e3b2d12789774e57e11867bf8f1e58e919",
+          "logIndex": 166,
+          "nullifiers": [
+            "0x1a990baea027bca12647eb7fbfc027c628cf1bced8779fef043627681075a9a2"
+          ]
         },
         {
-          "seq": 21459,
+          "seq": 21555,
+          "type": "nullifiers",
+          "block": 26451495,
+          "tx": "0x5963473d99bb81a454abeb484bedb4c2ebe87b1f824634f20339e9ac8369a1f1",
+          "logIndex": 142,
+          "nullifiers": [
+            "0xd5a6693380e79f6f92a5b5ed4d572224e57097d9d8ed123fe56f0e735a27c54a"
+          ]
+        },
+        {
+          "seq": 21556,
+          "type": "nullifiers",
+          "block": 26451499,
+          "tx": "0x51ab1887c2642a0c68a5011bd00cc2d5437fa1701a193d61a7e77f6421972935",
+          "logIndex": 199,
+          "nullifiers": [
+            "0xe55f6c090506bd1e79fca488779d00f1cdd3e6b0fe4e0cd093721722e9520999",
+            "0x5e53efa0f644bad70e02e4394b8ec61b114071d13aa4892c4574352ee7aaa7e3"
+          ]
+        },
+        {
+          "seq": 21557,
           "type": "leaves",
-          "block": 26448817,
-          "tx": "0x0ae4511c6ec6b633835a8fbdf41916e96d19e172a2e135cf992471182d63a7b9",
-          "logIndex": 1727,
-          "first": 8754,
+          "block": 26451499,
+          "tx": "0x51ab1887c2642a0c68a5011bd00cc2d5437fa1701a193d61a7e77f6421972935",
+          "logIndex": 200,
+          "first": 8803,
           "leaves": [
-            "0xd19a96c337c0e70c0f157e221e1ba31c77989a0af913ce7d1c11641b9fdb6600"
+            "0x0e49ab46487ee5b460bc60330d336f8be6c4ace301568e35eec3c4e2d68ea602",
+            "0x23e5615b696773cb6d787b54a67243f6a0cc16d57fb973aa97d87d916ca20d05"
           ],
           "memos": [
-            "0x02d8bbd667d7013f2cc2444d9521e604e81b36866c4e6024494c8c2d2a2792ca9ba9efcce2277184311abb550d1d74ec5e720bf50b873e5949c10473b2c65fcc9eb895fedde2f9d93c0d4353b0863dfba8d660ae7624e1bf369449da88a04d847ca82ab88781e6320233e10e4ab9fa96648391ddb894fc29154162d8978e2a7c1d2fbe4614b79a8bdab26a379dc7d4389ed8a56af95a8cd2b0243949ba7231c4428dd0d1cc4a714b13"
+            "0x035d15a85c81aa7378c91024bda6c6a56e33bb2e849b17f6bddd2a541cdfd274907c5765c5012a4b6dd31930acda8a95213ce22c4e673a5cbd2690ea0d7cbf860c5d21de99381ca19aa79a4d04bc06dfea8e95646f2c05da341b83a5866fa0e1ea87a7e671c6ea712c839169ad5bef556e3e602ad2c244493af5f286b9a33293ddd632fd876aba5dea2cdb34dc543643fcbd6f8c97fe4dd405cff29386dab075b6b44c737aa1c333c2",
+            "0x03a36815a19912ffd25dcc34bf2749a36b8f6327587ef5f30b6883c767789fea3df958534ab2f038236eba369e7622d94fc6b93a1d4c858cb20e58d87f29097b3848ca85bd5c3a5a5c0866beffe0b80314274fe8dcb9ed695ee19e60cda86fe03a1789d9085e1a74111f950c53f1db7924e638ce4b7d8ea2b072c1fd8f22bcf0b3d631d9795d91c9f022acc67d4a32bde7d7e3b39d11096ad02a81abfb9a096430ecd8dd0bbe4cc3ac"
           ]
         },
         {
-          "seq": 21460,
+          "seq": 21558,
           "type": "nullifiers",
-          "block": 26448825,
-          "tx": "0xee9ffef2acb23fcaeb529b132a612f4f289068c8aea73b57653ede4641e04e34",
-          "logIndex": 2015,
+          "block": 26451503,
+          "tx": "0x943ca4a0dbefed3d6fb314e67c7fe29f639e04bc5a441ff9566bc04cf33a7c5c",
+          "logIndex": 108,
           "nullifiers": [
-            "0x0b5819e26be306b0f9252d5edddd30063d39be9e3d0f66561ba6de39aa11f8dd"
+            "0x848efc340f05aee8c9f0bc3af69025d377f8d67eef19f59a13618ac86f0e36eb"
           ]
         },
         {
-          "seq": 21461,
-          "type": "wrap",
-          "block": 26448962,
-          "tx": "0x48414229aabfc75fc35f15a59edceb1e3b0ff7ff52addd1093d4a1d78ce24922",
-          "logIndex": 2588,
-          "depositId": "0x83015d78963ce80131e640d94b14a2b3172219697e87dbbf4b3ff997b9a79e72",
-          "assetId": "0x3cba71e1114af183cdeacc6b8457a474d17529fd28704480ca799d0d03126f34",
-          "amount": "2500000000000000000"
+          "seq": 21559,
+          "type": "nullifiers",
+          "block": 26451510,
+          "tx": "0x091ae61bd5464aa934bfee33883a3e5777a5be7d183661bebb6913b611a3c53f",
+          "logIndex": 265,
+          "nullifiers": [
+            "0xfd8947395e4b94a7d0ee2f2aa619d7f7ae86eec3c62fcd218b4ea5bc09380a58"
+          ]
         },
         {
-          "seq": 21462,
+          "seq": 21560,
+          "type": "nullifiers",
+          "block": 26451515,
+          "tx": "0xd3a76fe25c7a1fe09a60ff2f2ccc03dc90305b2d84639b30be69c75b5017e403",
+          "logIndex": 97,
+          "nullifiers": [
+            "0x402edc88e5edf05bd6a41e3891c6ac03e638fea08d689ae0795e3370da5a105a"
+          ]
+        },
+        {
+          "seq": 21561,
+          "type": "nullifiers",
+          "block": 26451602,
+          "tx": "0x5658f3679d5e9d63648c48bc4b5e3b6fd6cdecd3b334ebb9182c0a72fef51ff8",
+          "logIndex": 172,
+          "nullifiers": [
+            "0x1227e9c464847936c31dd5935a59f2d24cd4b671852d05190db293fa6e689033"
+          ]
+        },
+        {
+          "seq": 21562,
           "type": "leaves",
-          "block": 26448984,
-          "tx": "0x88ab20d79207c4c3b4063d0133eebc2ef5f2900b324aadc894cdf293338888d4",
-          "logIndex": 1254,
-          "first": 8755,
+          "block": 26451602,
+          "tx": "0x5658f3679d5e9d63648c48bc4b5e3b6fd6cdecd3b334ebb9182c0a72fef51ff8",
+          "logIndex": 173,
+          "first": 8805,
           "leaves": [
-            "0x55c5a7e19676fae175b36dc89f9551ff925bc7517881e206ed8bd69ae2b1d807"
+            "0xab3cc518b6b054334e53ff4bccc3bdea7de0a433c50de781495f47574cc01aab"
           ],
           "memos": [
-            "0x02bf0de307b155308b666adec69d39ab196c6c8050fa299e3d4f87213c81f6c643945f0e35c8b0ddb666ab69f5ce0367bd54082940ee20ca1014fa12833550c576b4e207c260ce75cbe6eb874e5bca36b1960ea11d3c58c6c5a6ed5a28ad5682943fe3c7312eacb0063decb5cbe55628a3cf602344ab4f423ae1774eda8669c144612b68b3c546bdebd4136966d234ef6aafb779667a4d96ec34f86de73ce966e81ee85c52b9dfa0b5"
-          ]
-        },
-        {
-          "seq": 21463,
-          "type": "nullifiers",
-          "block": 26449102,
-          "tx": "0xbe3071a86262c9e60be190145864962bc3b3d7e58e5ecccf6ad44e48d3fd34e2",
-          "logIndex": 607,
-          "nullifiers": [
-            "0x5be189e5f62172fb5148738bada8504d29eb4167fddb9cb35587da991404c58e"
-          ]
-        },
-        {
-          "seq": 21464,
-          "type": "nullifiers",
-          "block": 26449231,
-          "tx": "0x7a795ad1b596400a7a6b5e5856216cb1eed0630ed402b5dbe3d4fa792f60637f",
-          "logIndex": 570,
-          "nullifiers": [
-            "0x921f25d0d465bb1e5dcf13008dfbad191de82f901078ff08cddb55645687ef2c"
-          ]
-        },
-        {
-          "seq": 21465,
-          "type": "leaves",
-          "block": 26449231,
-          "tx": "0x7a795ad1b596400a7a6b5e5856216cb1eed0630ed402b5dbe3d4fa792f60637f",
-          "logIndex": 571,
-          "first": 8756,
-          "leaves": [
-            "0x25fa681f6c77655f7bcfe0e165bd95df2a0876c7054ef09a3e862602dc6fef24",
-            "0x0675a65debf7fbb2d86bff84d38987ff798504e8f2656ed76a688688a756b662"
-          ],
-          "memos": [
-            "0x026de957d3e799cbaa908940800680d63c2cb42ea538e49dcb89ff598c2bc3d5473662ebb8652c48011feb1dd30b4d484920285da7f85ddc66f131210edb65b285eb22a89a4488d8f5245760faac72d56328b4495eb3a61990ca48198c33e7c99504e6bc62b156b052b99312e82ce360108918c6cdf597cb04619ceef003d4729f4545f3fc3a951f7e330d2e221442afbacf6832010e63987b3e5ca4707a4a7fa448d46fc682101af5",
-            "0x03aaa25216b651212b214ee4424a0943eab9db67cbdae13ecafe5af46e882ca9d91e3bb4c08b9499fef9205e20330fed41ff682632224cad3e36d9fffa10ca913e6587aafae6693d67ff2e1b81ff06d6becf369b3ae23dbf4eeef4153842734bbb4df9222b9b08cacfc697d911ba3bffe354fedb317972a60ae2c6ca83661986569ab1f2afb6e4d103bbaf7cb46837aa91c417982c1afc6ca02071aa396eb08ffcccb511b21ce905ab"
-          ]
-        },
-        {
-          "seq": 21466,
-          "type": "nullifiers",
-          "block": 26449509,
-          "tx": "0xfd897b63c0ebfd36399cd421acf3c0fcca38cd3ccece7838a2c8f6b794948d6d",
-          "logIndex": 293,
-          "nullifiers": [
-            "0xa1827c3c757d5a69d5e89cc899a7f6fb18780b7173955862165a1e694fe0298d"
-          ]
-        },
-        {
-          "seq": 21467,
-          "type": "locks",
-          "block": 26449509,
-          "tx": "0xfd897b63c0ebfd36399cd421acf3c0fcca38cd3ccece7838a2c8f6b794948d6d",
-          "logIndex": 294,
-          "lockLeaves": [
-            "0x2149710a65df1c35824ea829d19186d0d692870af2217d52292b0ce2a6f31c53"
-          ],
-          "lockMemos": [
             "0x"
-          ],
-          "lockNullifiers": [],
-          "via": "pool",
-          "first": 255
+          ]
         },
         {
-          "seq": 21468,
+          "seq": 21563,
           "type": "leaves",
-          "block": 26449587,
-          "tx": "0x3ce19f4459ac5c96dcc6ea5377fbd6dadbbd65317ca9e3d91d27db70393358b2",
-          "logIndex": 270,
-          "first": 8758,
+          "block": 26451825,
+          "tx": "0x1ff7dc10167543e7d2e45fc6b17cee7041bde0b230ea1569b490ed9f2c640449",
+          "logIndex": 63,
+          "first": 8806,
           "leaves": [
-            "0xefe998876e84a98a4d67a5e374ba3724205cb578fe1060155c363e3cd81aa75d"
+            "0xd9708625ae3f3a0137e5a7e21eda0d842e7a743f8f9d5686c49aa2f047416941"
           ],
           "memos": [
-            "0x03e3870d65cfaef68e2ad990dace0c08b81eb852a2acf1c1e0fc0a7f51d29354cbfb25d44b0f7ffa8b7b30945bc83b99fd59ffece8676b5ec10771a84535a77ff26fb72e83a64abbc9c9314bdfa094bec13d23ae9214f729df6da74049bd521f408a43492bc46d9582543337a392c5f87324b48b7e9a50f1e2db72206f62f7d190511717d1ae2844220f282f99595129d79847820e00dabf3d438cd88452f6d20283fc9c335debd5fc"
+            "0x022ed26fc06ea1b2632ec44b2509778ecb083bd1bc38b111b3e4502b71b21637d241da768fcabbd667af9e60a09660054a737e33178a5250d7fdae827b3e6371491229c5205cace9a906d221e9c9dfe27953874e2927904282d260a61851980ef62c38943a29a6b7a000183b1d6557a3e91e99817089db5867febcbee9f186b4db015fe4487782c14c53a8c99de0bbe16b5f78711dc6ca9390851c9452ad2ab044088ad6ed55f0f893"
           ]
         },
         {
-          "seq": 21469,
-          "type": "locks",
-          "block": 26449587,
-          "tx": "0x3ce19f4459ac5c96dcc6ea5377fbd6dadbbd65317ca9e3d91d27db70393358b2",
-          "logIndex": 270,
-          "lockLeaves": [],
-          "lockMemos": [],
-          "lockNullifiers": [
-            "0x9216e55a3ca4b1819cc6d31d050883623dbeb28abb415b1795ab9dd4c873e0e9"
-          ],
-          "via": "pool",
-          "first": 256
-        },
-        {
-          "seq": 21470,
-          "type": "nullifiers",
-          "block": 26449806,
-          "tx": "0x244c5b6318d4ff3f39aab4bba871e16b3318cd9ce92d3e30cf29860e88073132",
-          "logIndex": 27,
-          "nullifiers": [
-            "0xf1a767a67eef9040cb7ffe52054da0dc6094ed931b1549f7e21eeba9b9576d7f"
-          ]
-        },
-        {
-          "seq": 21471,
+          "seq": 21564,
           "type": "leaves",
-          "block": 26449806,
-          "tx": "0x244c5b6318d4ff3f39aab4bba871e16b3318cd9ce92d3e30cf29860e88073132",
+          "block": 26451828,
+          "tx": "0xa809599853fa8ae95d9b549cd9d6aa91eff984765c2e5d4f43016ce0f86e7df3",
+          "logIndex": 238,
+          "first": 8807,
+          "leaves": [
+            "0x45d2e334153aa36b01b7e09ba1cbee51c3c3984d59834b36dd16243d6b6c2425"
+          ],
+          "memos": [
+            "0x03e042db78eaf1d48d2721db4f6ff3f9ea3ee5042cb99f2821a04d67ffb026ae053cc7cd3dacda7b230364af51303d16acb0542188cdaa938d5461a65f640423d1755fd7df7bba02accf6e2c055396beb3a17aa81fb0bf6376efd3dec4c930f04e0ba7dbfcf3d6f36bab05b32109adebe543c7ac3a6eb5b32bc51cb584c9918dfeef19ce9936e4d7a625abb5c70c8df0e9109a3c67caa751683af0847b157a777787f9aa38a9227cc8"
+          ]
+        },
+        {
+          "seq": 21565,
+          "type": "nullifiers",
+          "block": 26451832,
+          "tx": "0x0074195f2b6b3a259f4e39ed9a2855114504cace1ef9af1914f0b114cee10979",
+          "logIndex": 358,
+          "nullifiers": [
+            "0xfe046d251fccb5278c4a142b2163dbea66e7f9234b22ef481399c6a130b1073e"
+          ]
+        },
+        {
+          "seq": 21566,
+          "type": "nullifiers",
+          "block": 26451838,
+          "tx": "0xab7dcb78a58ded4bf9c958b24a903388ea4da3592c0429ba2e2818aa8df30274",
+          "logIndex": 368,
+          "nullifiers": [
+            "0x7c0f2e1f8b9639f4037a3734363ecc3e8d4cf3dea6913185b9dc30ad9b8a2547"
+          ]
+        },
+        {
+          "seq": 21567,
+          "type": "nullifiers",
+          "block": 26451846,
+          "tx": "0xfc2ac27bcc2d8200b2899e9c3dbb664a091ecd789a8f59d7d034651aca2ebcbd",
+          "logIndex": 433,
+          "nullifiers": [
+            "0xe8653e484c79f3fec4d33f4d5e5f67cdd6ce07dc0cac7c9bfed92ca23ed442d1"
+          ]
+        },
+        {
+          "seq": 21568,
+          "type": "leaves",
+          "block": 26451846,
+          "tx": "0xfc2ac27bcc2d8200b2899e9c3dbb664a091ecd789a8f59d7d034651aca2ebcbd",
+          "logIndex": 434,
+          "first": 8808,
+          "leaves": [
+            "0xdb23af1c2aa8433b51496647fdcf8872d86202a4441cd65abc9ce698aa3a45d5"
+          ],
+          "memos": [
+            "0x0326cb190b7d4c9933a293d55677fd7828246ea5ac426340814cd947e1969c7c2b8b80f7bd44bef5ee5e9cb1de6bb42dde530cc953526301d86095889fca85e861a2e13dc17bdf2be7b8555554f81d794dd32d7a74395bfa3bd18c0b1d3b128a7391bcf3ce2f05baabf8582f48875520877c88cd402d209c5487c6c2750aefb78bb5558bcfb042db49ec6eb57ac9cdc64a6492265556215867fae767be50e50ecf88f25d487341d5a1"
+          ]
+        },
+        {
+          "seq": 21569,
+          "type": "nullifiers",
+          "block": 26451850,
+          "tx": "0x39c1be85fc92fe43c3b1e7b5bdc8b0e82247ed7dcdca40d4457890c0b2e11486",
+          "logIndex": 55,
+          "nullifiers": [
+            "0xb1407f8315132fda279aeb412e248dcb46ce5fc8524fc24f2b0e90843e278045"
+          ]
+        },
+        {
+          "seq": 21570,
+          "type": "leaves",
+          "block": 26451850,
+          "tx": "0x39c1be85fc92fe43c3b1e7b5bdc8b0e82247ed7dcdca40d4457890c0b2e11486",
+          "logIndex": 56,
+          "first": 8809,
+          "leaves": [
+            "0x3f6c302534666ea2ddda866a7fa30d3b41c185c548ebc877e814e149b93c4d07",
+            "0xe43a6c8048a01cfc9b6dc9413f894277018d5bc017d117515cba23b5e1e0db5a"
+          ],
+          "memos": [
+            "0x03c043acee76526209f236f8548ba96a564c1c3e7adaaa239acac1addceb7caed0bd467ced11bbdc705031f8fc17d148a047afcb0bc658d42682e09f70f4a2442dd30735a5f11b2669fde7c2663fba339e69c6c5accd2e0965597c742940137684a2e401555d0a4f7f605191afa4d3dafe5b92afe2c36fa1dd537a2f0d81ad9a9667418558baf7ba8930d1962b4b33708d280a0ad42df56546b0ab52385e9df2222a09be3255b0bea8",
+            "0x030839e23e55d4531beb8b2a6ba30f0f590904b1b745975bed7d2ef89e67353a8e0f22bc3de4a5a884472417f542634913d85c2b2ea3b47081bc590a2a6b3ddfae9ed8ded7028fe4c3c17bb7b20c21f9f29543b99867656ba7596f08a7e7a5c5e7302a68493309141e5413fc0823508f078da052c16dda478c08f9901f60c6b1d04291fb775287c18008b772b7896d9560699a598febc3eefd123a05d5036cb393b90edaa9642ec3eb"
+          ]
+        },
+        {
+          "seq": 21571,
+          "type": "nullifiers",
+          "block": 26451868,
+          "tx": "0xd3dca5e828ceb43e4a0079a0580ffb08cce2b1aed478b842d1a68bf7d966b0df",
+          "logIndex": 240,
+          "nullifiers": [
+            "0x7e43461d35121c8129f992b8b9da396447fcad230c5e3f00d01cfc0d9585517e",
+            "0x0b666e727919eaba1003a958d6f37b0c60971897a41bbfd798d16fa3cfb9d7a8",
+            "0xbc5894e16a46e79bac1cb14d02b0695233d6d613ca5af10fd1808a1eb8ea3e3c"
+          ]
+        },
+        {
+          "seq": 21572,
+          "type": "leaves",
+          "block": 26451868,
+          "tx": "0xd3dca5e828ceb43e4a0079a0580ffb08cce2b1aed478b842d1a68bf7d966b0df",
+          "logIndex": 241,
+          "first": 8811,
+          "leaves": [
+            "0x9ad142cac3d9c2201edf4d9ce39de61049207353c9c3468024c9aa7b138d4f76"
+          ],
+          "memos": [
+            "0x03f281c9003dd38d863e647f7d09292e2a7468c5b0d5ca914731192768f88b01acb61f7b345f29de13c0c1161e1a845c1c673cbb0494ccf6be3fc15dc0b0ff738af7ca801814a1046c9a04b56ccaea8d347559768eaeb38f26ac6f59e37d3584e8f614204107f5123d5bcd62a08630c379fb2d598a48aa6b241d86149e0d85b36652c61351db620280f888e8fbaab484479d90a1af879f38935997252156ac00dce239a7caf5b35a24"
+          ]
+        },
+        {
+          "seq": 21573,
+          "type": "nullifiers",
+          "block": 26451873,
+          "tx": "0xd08cf7bb1e284986c87386682a162a93239e779221d35e41036eedba7e5b0ba1",
+          "logIndex": 447,
+          "nullifiers": [
+            "0x3becf9e7cf11e69f090e0ff744c362058cf07072b85f81a5693d166a6f18e8c8",
+            "0xee12a54d06e9fadb073d305d957fb429253d153d6e238b9c24a134764de44d13"
+          ]
+        },
+        {
+          "seq": 21574,
+          "type": "leaves",
+          "block": 26451873,
+          "tx": "0xd08cf7bb1e284986c87386682a162a93239e779221d35e41036eedba7e5b0ba1",
+          "logIndex": 448,
+          "first": 8812,
+          "leaves": [
+            "0x6b20e63c03ee6fb28d1d43c46a8ac1d11969c24f1b69e51fd9467d7266de771a",
+            "0x5d6818e4387deaac1e91288de27f01b2fd5515b99ffddb16a24a6e542be0fcad"
+          ],
+          "memos": [
+            "0x02a2ad62c762ae25e3d18f141644373a764b5fded003860ce55b8532dff998f6bc229b465528691ac420b080c7ac9d689c7166556d613b6b7752d0299b346833a3bc1803f4079726995780e5aa9bdc675dbddfb85424e6b1c9128570377c75b83b62b9dd21aff8b686e85698e59cda660933135619273d01a0c1b088c543be878d9844c84ccccbe0bb079be9bb564a28f2727df8b12dbbd58b988fa77ea96583852726278ba0308c8b",
+            "0x0368665e13577d6edceeeffeddcf76d2e065e9d65366a86e50c04fb047608b445ec6a016ca655098be007f636fdd4c27299b28620a125d5d754c15785a52e606d01ed13d698a46d7df5a0615a66cc95302fc13e7b545aa9b6b6f838034588295feaee3354e36cbfb9c20847431cca0ec67eb093680ac6c384bcdb5c9cfd8dd8c4879dc9ed286b2c6aaeeaee7499d17d09e614e2d5517aab43f19a740626d448fef04c204a9d56454bb"
+          ]
+        },
+        {
+          "seq": 21575,
+          "type": "nullifiers",
+          "block": 26451878,
+          "tx": "0x971044d0d5480b6d4aaff1975d1796a334a4816e980ee7cf56118a831179f7d6",
+          "logIndex": 364,
+          "nullifiers": [
+            "0xbfd78e5b2def37dd6b6c3ed1bd400bea602392ebba295d0049d1a4042e136cce",
+            "0x993dc969dd0a2ec2bbd225fb37a26688a33a5227a0f8d05908275985659f2493"
+          ]
+        },
+        {
+          "seq": 21576,
+          "type": "leaves",
+          "block": 26451878,
+          "tx": "0x971044d0d5480b6d4aaff1975d1796a334a4816e980ee7cf56118a831179f7d6",
+          "logIndex": 365,
+          "first": 8814,
+          "leaves": [
+            "0xca31a3bacc0490e42c7a7a4e5c62a2349ce59cf55176b0f604348c371c639f56"
+          ],
+          "memos": [
+            "0x"
+          ]
+        },
+        {
+          "seq": 21577,
+          "type": "leaves",
+          "block": 26451944,
+          "tx": "0xafb84c0ffb5725574ac6cb4535728533ba2199169ae95e9cb882feeaa5ab1241",
+          "logIndex": 355,
+          "first": 8815,
+          "leaves": [
+            "0x5c6ec4df9ca54809452c42f0479ab278ee77f57cba9a6848e96f96ddcd8eed65"
+          ],
+          "memos": [
+            "0x029246983ff6efd56720403f2d3d43f4c2d40d5c2ea98a5ba9ac716d78aec3c32813313b4c8cbf354f6d71ad590e6df59a1bbae2806841c68860effc9c888196107a07f29e7e75eabdd1c9f9981ad758696db24f1e8761e1d21846ef5212d0a200a95afa970b491ffe4b45cc8ae7c5bc9c7f90375965c9e0c0115455ae79659aa186766ef35e6653877a94b99a2dc5216c311bd6244f92fcfe85527fd08975169c120dc685acf18180"
+          ]
+        },
+        {
+          "seq": 21578,
+          "type": "nullifiers",
+          "block": 26451948,
+          "tx": "0xb9c589ffce4926380b670c0f376a4a5e56a12104b3bb612fc120675a05005ba1",
           "logIndex": 28,
-          "first": 8759,
-          "leaves": [
-            "0xc8d9491f5ec6dfdfb42419bd41b63ca52f5ac80cf2144aeb6c35999fe9463b73",
-            "0x3c434bfb9a24c89007370d01e99d34453963cbd32a0566b2ee2ec2539e4917dd"
-          ],
-          "memos": [
-            "0x03cea2928ee480b00970ede4e87fa9045006d7219dc57783c0fbd1c52645f9e228e03f3e7139f37493768614d754430619e48af1837ae9a40b0b136217d9418fce2926fae6b28c62ecd72e51e5519619e8878c7464a25f99dbd80ffe2588c3355749fefe497a2a263bb643f45cbc087ccfac0f348e1ae75a239ae78d5eec2fa1f42cc6272cd265d36bbbed8783b9a0215757d72ece8dacc05e41d491c52bf860ae359bc32d0d44bcaa",
-            "0x039732f1ce2219f4628cfbbb2bef61041e9d28f90b5e2048687ed53001db72227ba33946c4d5b31dd1076310e44b3496bc84ab942fb9453739df9833c88d21590d7ea49ce155f42974614030735453a7b04a45d64e11ff6f148961a0f900b31d70b88afd80208962421038e829aec4b0c1c121312f4b1de4d829322199a473e32759cdf2049da219dae7d5ec4ff01d80a6355a0df301e4c0d7a801530bcae72d120f8086c7bdd33650"
-          ]
-        },
-        {
-          "seq": 21472,
-          "type": "nullifiers",
-          "block": 26449888,
-          "tx": "0xa5bbb063258f1b654b0511f86acc96bd22745c33ab98e1f123fa776c2bdabd39",
-          "logIndex": 219,
           "nullifiers": [
-            "0x6d0284bb2b5743d50456d7038fcc62d44e1e174140a275cb22042ff25cbe4c6f"
+            "0x7579ff007ffa330004aeb2b075c0d37b478df2dcf17bd5e526c6c08ac3d35bae"
           ]
         },
         {
-          "seq": 21473,
-          "type": "locks",
-          "block": 26449888,
-          "tx": "0xa5bbb063258f1b654b0511f86acc96bd22745c33ab98e1f123fa776c2bdabd39",
-          "logIndex": 220,
-          "lockLeaves": [
-            "0x7bad968adbfe6fb788d34722c401f20e3153a9d060727e0b7b0d73724df31982"
-          ],
-          "lockMemos": [
-            "0x"
-          ],
-          "lockNullifiers": [],
-          "via": "pool",
-          "first": 256
-        },
-        {
-          "seq": 21474,
-          "type": "nullifiers",
-          "block": 26449889,
-          "tx": "0xe3e06c9b5c973d8150d3fd66f2b6284e5f17ba58db25992f917b184755882da4",
-          "logIndex": 236,
-          "nullifiers": [
-            "0x242ac520112fc7968fb44321099124c05c6482bd5920d717270c0af85b5caf4f"
-          ]
-        },
-        {
-          "seq": 21475,
+          "seq": 21579,
           "type": "leaves",
-          "block": 26449890,
-          "tx": "0xad2601507f143178ae0917c74b3dffb871f59eb220832497b2cf7ad1a5d9aae6",
-          "logIndex": 499,
-          "first": 8761,
+          "block": 26451948,
+          "tx": "0xb9c589ffce4926380b670c0f376a4a5e56a12104b3bb612fc120675a05005ba1",
+          "logIndex": 30,
+          "first": 8816,
           "leaves": [
-            "0x9ee1fbd16bebdfcc53f47c7f985b2a1ed484f0dac4a9340b26ac4fbdf216a653"
-          ],
-          "memos": [
-            "0x03f09e3fbc848c8179ffc254a3591eda02f30956ebdb7fdf4aefc779bf30717117ee2ede46ef0b5795437fb86ef44f90a809821470d5203bd8e9180acf3a336365a835e0c443ac7c4ded981f150440736de23b0a4384c6641fab6c59fdc6b34b1375dea51014d0fd2ae6a3fc8f73fc9a7c77554b7c77adebbdfe386cd6b22737af6b00e242428596c70d91107f0de6552e3094cc324a92a6ec134ad8fc3303bf14c5103d9e72010782"
-          ]
-        },
-        {
-          "seq": 21476,
-          "type": "nullifiers",
-          "block": 26449894,
-          "tx": "0x9ec8a4c9f199373be6f30819ba41bd717e51922974e7f42276a32f13646d9be5",
-          "logIndex": 335,
-          "nullifiers": [
-            "0xd08570dda72fd3427cf88b8d200245e0b9eb83f254a98323748f693aaf6b2e26"
-          ]
-        },
-        {
-          "seq": 21477,
-          "type": "leaves",
-          "block": 26449894,
-          "tx": "0x9ec8a4c9f199373be6f30819ba41bd717e51922974e7f42276a32f13646d9be5",
-          "logIndex": 337,
-          "first": 8762,
-          "leaves": [
-            "0x7dc3b5e3beef4f6f05e06fb799bfb1d04a572419a0a6e13db7096b0ba8ce1008"
+            "0xc54be5d5b3dff1d1e00895de6bc46461493e9aa18a4ef4536ebd5ea617df3ed2"
           ],
           "memos": [
             "0x"
           ]
         },
         {
-          "seq": 21478,
+          "seq": 21580,
+          "type": "wrap",
+          "block": 26452029,
+          "tx": "0x07e04be7a6f21c976684faaca7faa736993c5b90f41c2ffd51384f711007eb2e",
+          "logIndex": 765,
+          "depositId": "0xd67304ee13c1f148b2a6ae523c9fe1ec76e6c5f6b459bad510b3bca50625d4ea",
+          "assetId": "0xf0bbe868af10c6c67652a99709bf32048d1aa7194efe3e9a1ef1bde43f94762b",
+          "amount": "26118981991670000000000"
+        },
+        {
+          "seq": 21581,
           "type": "leaves",
-          "block": 26449897,
-          "tx": "0x87172d98871fd1072473dd79bcee720e91e0bb7d203e2cf66a667b640a4cbc1f",
-          "logIndex": 379,
-          "first": 8763,
+          "block": 26452031,
+          "tx": "0x341abf4fbec6334933e41928be468755a0bd52838928b13d4d4b356efbf51451",
+          "logIndex": 390,
+          "first": 8817,
           "leaves": [
-            "0x49f4ef6c4c32665347c4bdea9e2c6cc78f8745e32636c245378020e2a098581b"
+            "0x563242a4995356cfc5e3eec24fdc6a88bcf70b12851c66ed376b5bd2e13daaf8"
           ],
           "memos": [
-            "0x0227a98393aa7c1aeb0c4ce6691bf8c002037bcde94f1fdf973c8798cac2f188754d4d94d8f4670659ac8514c234b1641cb37de3dd01ab5e9c3ee5a0cf50f80fc3d9947a3d946bc1920647d2b6205332dd1aebd0a30721c44c857f69c18f0dd75fae397a44798ae0d8334b2068d25ca054dfe3babf1379173ccc40c8aea8385e8aa7f866a23de5f199d717a195d2409b6b9974171eabdf6a15bab543e3f446d9c5aa1b5b2698ecd350"
+            "0x03298ee4be969d7b421ee3165846971e04e46ebf0c99a70acf0ec49f7f94f41ed3b780bd971c0af553ad3986b98ac710965ba5e1c299aa7e21a0fe11ab5656d17ded571b23d97ad57cfa067f2113ff00ab56add37c227ee778586fb5b99b3ef27355477451985b91f779647bf60449aec26cc3d9dd1f0d5080fb193d72cb942bb6a80afe4194777a3859c7215585f4c7e46bff7b963aeac3b52c0761bb1418fb826d33ba985ffbfdfe"
           ]
         },
         {
-          "seq": 21479,
-          "type": "locks",
-          "block": 26449897,
-          "tx": "0x87172d98871fd1072473dd79bcee720e91e0bb7d203e2cf66a667b640a4cbc1f",
-          "logIndex": 379,
-          "lockLeaves": [],
-          "lockMemos": [],
-          "lockNullifiers": [
-            "0x4a34f7288658dd9605d9b2f8731e35346e869748325c376a418864b1d38c7473"
-          ],
-          "via": "pool",
-          "first": 257
+          "seq": 21582,
+          "type": "wrap",
+          "block": 26452057,
+          "tx": "0x9aabb97dbfeb49a679ef2bbb6d9340f51a4ddd7fca88a450aa8109fe824aef90",
+          "logIndex": 1971,
+          "depositId": "0xe99e99cb94e46813d7a739c562250fb7e88af2b83947d92493a6c9cf301faaee",
+          "assetId": "0x3cba71e1114af183cdeacc6b8457a474d17529fd28704480ca799d0d03126f34",
+          "amount": "4500000000000000000"
         },
         {
-          "seq": 21480,
-          "type": "nullifiers",
-          "block": 26450093,
-          "tx": "0xb5c525c42b50daf21e5f320882d737d802b4e150adf664bfea32f6f07992070a",
-          "logIndex": 216,
-          "nullifiers": [
-            "0x639990a14bf08211f5b20b85dac563c3256ec277e54977dedf2e812ca1c9858a"
-          ]
-        },
-        {
-          "seq": 21481,
+          "seq": 21583,
           "type": "leaves",
-          "block": 26450093,
-          "tx": "0xb5c525c42b50daf21e5f320882d737d802b4e150adf664bfea32f6f07992070a",
-          "logIndex": 217,
-          "first": 8764,
+          "block": 26452057,
+          "tx": "0x9aabb97dbfeb49a679ef2bbb6d9340f51a4ddd7fca88a450aa8109fe824aef90",
+          "logIndex": 1972,
+          "first": 8818,
           "leaves": [
-            "0xf6cfd40f0439ae045e49fc726069ab09619848dd324118bda3322027d021d753",
-            "0x91831ff4608c6e5f6225a26473b1848c7d245c145400160d26d9b1a44f3c627c"
+            "0x1df36795574be6e871c9770d0a81ac3cad7e172f0ac77576fef52679631ca907"
           ],
           "memos": [
-            "0x0262f535fb0636859305002b1345154c909f074bbde53ca904b040598c234852d699285c8387fd5872c68b4c5ee68f38ce71b689271c31f21fd63ad4ac39fa7ad2daec857089cbc3483df9ec234742a43d09d7fd9c93af65aea13e91177f0ea9861657a5141f93808c005168ec76c9b1bd1ce3bd6c042ccfa9bdff158b12db3ce1ab432583da3674818ca1434ef3671912fc35f79cdf507538e1ab90802a3e66e60655bc20226cc05b",
-            "0x022f4cabdcd4abcb2503d474818782485be8de2146e47c6216aab5d3580f1ccf289ff74de662d0b3aa320b7b1884bf6392f734a90fc85b83760fb50f434ab4deb17476aae5d952716e2ada80e562b905817cadc986406d69d1f03da5c2ed2f1c378693cf569f3e0c2dfc45c20ac8ae943c1ae1fc74e23e606f1cd0df5573037c790e3a21556db31cd2ff5d0bb9d123ea4519dadaed4218326b727e92980d07778b2e2d5a69ad63245f"
+            "0x02d20bfd85e4a8da01ac2cac4c88cd7112e603be6fe06ad0012fa04022c3bee07874e4327052dc1214cd45a8c02de9fe60c27ddf0889850fbfcb2cabc3ed70817b0f404583e9d5284460e6ff88dd43c93e0e984cb49b9aed7dcec36f5700d0d2c2a69fd62ccabf9a0e253abaaf26b136de41aecb4b667a823b671ce15f94c2fb828c6e98df382b77477608aed2f71dc4e7e7320c0eacc261acc92570f9a94fe7ee1ac8b5b4b155ddd0"
           ]
         },
         {
-          "seq": 21482,
+          "seq": 21584,
           "type": "nullifiers",
-          "block": 26450147,
-          "tx": "0x9b0cd94544dd3210997b1b353d8cea22c28c9b6e4333022d8a4faff7ad3e03c4",
-          "logIndex": 180,
+          "block": 26452106,
+          "tx": "0x7e3c82a8c55fdcf8a29e39b486c7a7a36cb0bebff39a79acdc0278fb2adb67d4",
+          "logIndex": 295,
           "nullifiers": [
-            "0xee81edefad478bd59a0ccaeb6ec847a5d308a01c5c9c1a29cbd4cb211f902755"
+            "0x421d4a6798bef673eefe11a1a2c1912d8b21da2611cc3fa3aaa504218c682b69"
           ]
         },
         {
-          "seq": 21483,
-          "type": "locks",
-          "block": 26450147,
-          "tx": "0x9b0cd94544dd3210997b1b353d8cea22c28c9b6e4333022d8a4faff7ad3e03c4",
-          "logIndex": 181,
-          "lockLeaves": [
-            "0x779a364609559cfb3c81a545fdfeead6c20781ebddce78c473da8d692ad05970"
-          ],
-          "lockMemos": [
-            "0x"
-          ],
-          "lockNullifiers": [],
-          "via": "pool",
-          "first": 257
-        },
-        {
-          "seq": 21484,
+          "seq": 21585,
           "type": "leaves",
-          "block": 26450155,
-          "tx": "0x65dc62595969f9092a9bb68b4257ccbec77f36fd6b9d9683491dfe0616b51b20",
-          "logIndex": 106,
-          "first": 8766,
+          "block": 26452106,
+          "tx": "0x7e3c82a8c55fdcf8a29e39b486c7a7a36cb0bebff39a79acdc0278fb2adb67d4",
+          "logIndex": 296,
+          "first": 8819,
           "leaves": [
-            "0x2f887d9fc44262e3c07248a926fb242f856d8f00ff7e52180b92c25912b2b1ba"
+            "0xe71aa888ed1eb6ac5e5366838325e5d5c4ccb53a53f5fbebf1756e944b3db328"
           ],
           "memos": [
-            "0x03abe7c9d507dbcb8cd3b7f0e7d7c825e60015af2a3a993aad3a98ba0dbd30222363db2c2a51d299b224c7ba39be371e90302e2cd6b070a1a0755856cf27ae99d787ba93cc9c3d71b18c770e41801689d82766b21982fa92aff11ecedf1db0bc9392e5307d759e6a164f6b1d5fc4f3066b7d72e0dd495a37f49efab18e6ec59b6d2b9de043414bcebbd557614a4d2ef239fbc00adc1578c48d1cbf63be7834b57e75849ed0f1569414"
+            "0x02fd0c139764f98f2ec9b334b18145acd7876f4df28e3db87c32ff05a33b46d475645282fb3111d253a50dce07fb71ec2c9d84b1f771fd31b353d496d6d9f6c1ac32a0f3112ebf5b620c64dfcb5bb7df5580a95d9757c8a8d76093b36a899e9f844bd44f89c8ee85f46dc1a7a03362133ccc0f9ea3eb1bf8d467bed8036ce75f152812ed37efdd3f5eb581eeddc1a7bcc77da4b983f2ecadcef3e1c7d975a8c020d491ea8f62089b46"
           ]
         },
         {
-          "seq": 21485,
-          "type": "locks",
-          "block": 26450155,
-          "tx": "0x65dc62595969f9092a9bb68b4257ccbec77f36fd6b9d9683491dfe0616b51b20",
-          "logIndex": 106,
-          "lockLeaves": [],
-          "lockMemos": [],
-          "lockNullifiers": [
-            "0x5194ef263f65f7bd6065ff21d8c25001a03c1f02b846e61070218d2bfad921c9"
-          ],
-          "via": "pool",
-          "first": 258
-        },
-        {
-          "seq": 21486,
+          "seq": 21586,
           "type": "nullifiers",
-          "block": 26450355,
-          "tx": "0x1c4888eb767b37ad35d6ea9919bd79663d62ecc53fa1848d914622c98f602d9b",
-          "logIndex": 521,
+          "block": 26452201,
+          "tx": "0x30d3cdad3019085a95f1ce63cbdb6cef432f417dd153541bfe9083eab60e7527",
+          "logIndex": 416,
           "nullifiers": [
-            "0x0f3d3ca45b9164c6ca58297ac06e00ba721c6953ec8dc37bafc12c959f81f21b"
+            "0xd5a8585cb97d2914ab2d51e8ee77d4f0ebf4c6167cc52910149ce3b80e6b4428"
           ]
         },
         {
-          "seq": 21487,
+          "seq": 21587,
           "type": "leaves",
-          "block": 26450355,
-          "tx": "0x1c4888eb767b37ad35d6ea9919bd79663d62ecc53fa1848d914622c98f602d9b",
-          "logIndex": 522,
-          "first": 8767,
+          "block": 26452201,
+          "tx": "0x30d3cdad3019085a95f1ce63cbdb6cef432f417dd153541bfe9083eab60e7527",
+          "logIndex": 417,
+          "first": 8820,
           "leaves": [
-            "0x44099c8ad011d45c9ed2e8584317f029759b329de49e6ca70da9c6492a0647cf",
-            "0xa35a4627b2289f61645902abe12e04d3dcd5b532f408ccdf8838ebe68673c657"
+            "0x14567a5a506e132ba803b5f034cc28a31d6044e15f5ef5737511d2d345b6ef9e"
           ],
           "memos": [
-            "0x035ec613101cb0d123fde7049c70aa4842fe551162b74f1630aec989d8bd5fb9a3a345723570fc98283d8e74e69bc9140e0a06bf6dd4dfee81dc212ad6682bbb54df5c443c18b0b6120697173ab7102d48e771f2bb28f055382b13e3244e8b0be12957c7105af3832c515bf1e7931a8f94e4a9066cc4c3d0ac209db9f001448b59c8db8729aff2dd4103067fc399308ef869fd53bc65ecc8ffa5cb79ae32ed68f75b73a15106a64704",
-            "0x0236b3e286208be93fec4c36427cadf095a30972fde9d34f541d9fce5bcca2d746b360004f57b89af0ce35caaf00beec6b41af5c9e2348f6d9a233ade71b4b7754350c8209ca09b3950b5072462a5acc91d7b7d3f96c92862b19d4446c847080e8c3b4e6b1cd27e2d962123368cfef79dc8b727f805c8746e7d98165532b58ef61f6d0a7697ac0eb1e92c31cb6d6e196797b49a043601941dcd03170ad6b7d7828afe91e0d7f559e29"
+            "0x03f7d04a885c3835213a56debb0361a45ea82a070ac0245fa3b9036de3ff547b866b0412d73f0bc7ea6e843c3c707cc8b221ae6bb2a56c9f6b75b52e561d20e256f84b55df5da5e16f735593c741226c36aedeef04a5675851e7c67677330dde2fbf16a71a48d2e934107cb072140f5f55f96d0e356bd5c33ea998c6ecee49858e72b7f7154cad37fd15e9b49e6b1315c01a4412b0b56d20a7827b8efd504329e2b2f9f26e5e27edc7"
           ]
         },
         {
-          "seq": 21488,
+          "seq": 21588,
           "type": "nullifiers",
-          "block": 26450469,
-          "tx": "0xe76f37bea3368f0d6f275046b727cffe948720ff8d118710142151365de48f74",
-          "logIndex": 193,
+          "block": 26452247,
+          "tx": "0x3306be3e15d78cd17a22ad503580ae246d0ffb23332957c4807fd45c9fc320d4",
+          "logIndex": 415,
           "nullifiers": [
-            "0x9df03bee52f372a9fca8671b33a23a80894011337c5bee9ffb95fa48e0ee88a1"
+            "0x9e7caa1359028af31414c64f7047b574e813f0aa7a6fd86e804650ec2442b1e8"
           ]
         },
         {
-          "seq": 21489,
-          "type": "locks",
-          "block": 26450469,
-          "tx": "0xe76f37bea3368f0d6f275046b727cffe948720ff8d118710142151365de48f74",
-          "logIndex": 194,
-          "lockLeaves": [
-            "0xd7f5d636e9b84c39ea9664811c0286eb135fe77f280dc1ab26ae68dcd4d2a044"
-          ],
-          "lockMemos": [
-            "0x"
-          ],
-          "lockNullifiers": [],
-          "via": "pool",
-          "first": 258
-        },
-        {
-          "seq": 21490,
+          "seq": 21589,
           "type": "leaves",
-          "block": 26450471,
-          "tx": "0x1de4ab0a202c143b70fb800d2573a10b821170965ff5e72878ccbb53d218d35e",
-          "logIndex": 818,
-          "first": 8769,
+          "block": 26452247,
+          "tx": "0x3306be3e15d78cd17a22ad503580ae246d0ffb23332957c4807fd45c9fc320d4",
+          "logIndex": 416,
+          "first": 8821,
           "leaves": [
-            "0x9ca9c7e8e7b1268ac5e8a7b667b5d87e3666791d578af11c23b006100170feac"
-          ],
-          "memos": [
-            "0x02c29cf04649593e6da425067912af3944e85c99409f20a217cdc14c706897ec9e132c7966f585ca4cf5a7ce3d9e2b4dde59197a0bdadd98cd21b60b8cb0a7b98b1d81bbd8f9a374590e20ee10b6860d0ae31ac828b0ef28e080164a0338223fae5d6bc09ee10f86dcd7d54b63d4f3c3b9b67a0edc2d9c68ee6a9f5a35648cac22e9b262014492328a94ec6243a96787a58b4743aa3534fb6d9cdd7d44e4a8b120ccad4144b625fa1a"
-          ]
-        },
-        {
-          "seq": 21491,
-          "type": "nullifiers",
-          "block": 26450475,
-          "tx": "0x9f49c6a9f8c4a74223de0d139256821b8b7ff2bcb78f78337a4e6b05ecf0d1e6",
-          "logIndex": 157,
-          "nullifiers": [
-            "0x36213999fc9b67552e9718fc99eaaf3ec9ed2f1a17586730d2e4f97edb675f10"
-          ]
-        },
-        {
-          "seq": 21492,
-          "type": "leaves",
-          "block": 26450475,
-          "tx": "0x9f49c6a9f8c4a74223de0d139256821b8b7ff2bcb78f78337a4e6b05ecf0d1e6",
-          "logIndex": 159,
-          "first": 8770,
-          "leaves": [
-            "0x44db102e4ed67991bf9a9dbfb7f280046b069f0b3895780d28bccfed144dc686"
+            "0x25bb12edf652698f5414cb5ba8398aa07ca021c8002cd46564a4b656ab350a38"
           ],
           "memos": [
             "0x"
           ]
         },
         {
-          "seq": 21493,
-          "type": "leaves",
-          "block": 26450479,
-          "tx": "0x93840759beed88b86da211d80371531338309cbbe6d2f271b0a359d508998c3e",
-          "logIndex": 332,
-          "first": 8771,
-          "leaves": [
-            "0x6557f06eac2e6e4159edf5fdee3323d1d50d0bbeed92236fe4424c05706e62db"
-          ],
-          "memos": [
-            "0x0293ecaf042d45ae1aecd6f66f567033e1c9d1aa9c318adee2b5f6251daf9060a79e8a006cfe581dccc7a92fb00963590a8ed98805eb94763a7d308f71fb5e72e69a1e43001886bc5015543daecaeedbd3cc6c04b7d2ba81392acf12b850dc170f2d441db4428a1d79441f874d0c2727c8b41bca64e9ea3fe257d887e3c4fdea4332074bed00d2bcd5efe9068430e663e8cafd446b73d952421e32d703a1b5251e0cc98a35dd72ee45"
-          ]
-        },
-        {
-          "seq": 21494,
-          "type": "locks",
-          "block": 26450479,
-          "tx": "0x93840759beed88b86da211d80371531338309cbbe6d2f271b0a359d508998c3e",
-          "logIndex": 332,
-          "lockLeaves": [],
-          "lockMemos": [],
-          "lockNullifiers": [
-            "0xf55feb830703eb8b18e25539a27e4aa39cba93185c0be37f05862aa5a9e9036f"
-          ],
-          "via": "pool",
-          "first": 259
-        },
-        {
-          "seq": 21495,
+          "seq": 21590,
           "type": "nullifiers",
-          "block": 26450568,
-          "tx": "0x442a77890fc7e2e64614b016da2a72405c94cc64bb06c0b32e89c63622da4ebb",
-          "logIndex": 341,
+          "block": 26452390,
+          "tx": "0x19cc4e67cf4eaee75c54bb8084278fb574cc49b2781f662e366094151a07b4ff",
+          "logIndex": 801,
           "nullifiers": [
-            "0x7adb949df25cd7e5276b106db96f58cdcdeb6ff655d1bce3fd9f11185f00ede1"
+            "0xad4a277d22d3b2d9f5c687d49be25dd822e008b8d4fc369cff517f68e6ba1d58"
           ]
         },
         {
-          "seq": 21496,
+          "seq": 21591,
+          "type": "nullifiers",
+          "block": 26452398,
+          "tx": "0xa2b2d10cbbca6b8827657cb2ec6b6e3c57b0d9d2d08a7ea7e6381194cac1a104",
+          "logIndex": 382,
+          "nullifiers": [
+            "0xfcc3d5e983d278985baaa4cfe1cfd73d5ab2cc6f5a592657a4c01278db168855"
+          ]
+        },
+        {
+          "seq": 21592,
           "type": "leaves",
-          "block": 26450568,
-          "tx": "0x442a77890fc7e2e64614b016da2a72405c94cc64bb06c0b32e89c63622da4ebb",
-          "logIndex": 342,
-          "first": 8772,
+          "block": 26452398,
+          "tx": "0xa2b2d10cbbca6b8827657cb2ec6b6e3c57b0d9d2d08a7ea7e6381194cac1a104",
+          "logIndex": 383,
+          "first": 8822,
           "leaves": [
-            "0x7178469f65dcd219b14a707a7ae54e15dd8da0558510717dd4235ce0d80e2a0a",
-            "0x0e51b1368fed8d2caddf470055af1c04f02aa82092a2d7aecdcb70581deaf620"
+            "0x119a631b2bfab8856d1e2b7382c4fbffecca34ae6afc18269c62978f913278b9",
+            "0xe5deeed245df210b9bf4721f51cbb9b435390db885357f914a559d3d7f1d89c6"
           ],
           "memos": [
-            "0x027757f64e97bf119d6ffd9ada06fdb3a90c739c286f798217fd2be76c38010b049a4b9f6c39817543ee22bac58b2a36d418d82e51fe6486b683f56884aab51340860596e36359fdb92d303c9c8360ce3167e7ffcb0afcf65216fe06772964b825ca64f4f21ccd7f853845ee6b89ff143f6ef6561ed8274b338ec84d2b8242cfe62c4c9cb0db9c1bff4097af9c0d08fa665d7e0823600edfbd5d419f0ab0b86870d2298f0f263620f9",
-            "0x02561fad12979311eb6f3c251ff322b9c6c0ff0fae95eddb3ba8a4870455330c8559f226427c5be447326b5e428fe69fa94214113fd59b53203c21807373dce7786372eaea80b90cbc025e0469319272cfd6bbe11ee05cbfeae637bc2726048726e480d14ebc57af42a56ba758b405692ce43d7d1aa23632b3cbf07da20dfde0aed2f1375d7d0013212d40c348c1fc156eee2dee4da3d443e42588a8423f116e600c7bdcb2bb353cd7"
+            "0x0202393bf00fb3bef9733f1c8f39a0b05aa2166dc3953aad17d209cd42bdb87d78d2eba4907a6475b7c9b4dcd6ce633e5530e9f19285028bfafe9c3b703d79cbc9c0395fd49977f280da03d31fa747679551c3455e9237ddcb2ddc761daa6096a6a65433424e28657ce013d6e915e1107d9fb70dadd424e6fd343dd6b37bb1daa301010d46e1e9f2d7da2d5aeafb87c316d5117d856765e14c910b2d7d8da5357da5c58cc03f24ce1c",
+            "0x032d3bf913c57924e9ab5007ef8466d720f187e70f68fef79e7e199bf22187368ff5ff9fad7536365d50d1fd701f131fc9b348e1d78c800ee924587903906e397d836fd22ba9051c0ebbbfe8d5c079f42798d58a495e0045584ef201f589bfe6cba6b254d7f6e213d5dd609ee56d65e55aa807cd6864417c729261ec4794517de454b235c9147d3201e0c9eaaaa2ce4209212761332cd532b949bb4263126712be2cc01e8ff3ebee7f"
           ]
         }
       ]
@@ -818,24 +789,24 @@
   "reflection": {
     "status": {
       "network": "mainnet",
-      "attestedHeight": 976556,
-      "tipHeight": 976556,
-      "lagBlocks": 0,
+      "attestedHeight": 976609,
+      "tipHeight": 976613,
+      "lagBlocks": 4,
       "confirmations": 24,
       "foldedCrossoutCount": 35,
-      "bridgeBurns": 963,
-      "bridgeMinted": 934,
+      "bridgeBurns": 970,
+      "bridgeMinted": 938,
       "consumedCount": 7,
-      "liveNotes": 3841,
+      "liveNotes": 3837,
       "burnDeposits": 160,
       "burnsAwaitingBundle": 0,
       "oldestAwaitingHeight": null,
-      "updatedAt": "2026-11-19T17:21:37.721Z"
+      "updatedAt": "2026-11-19T23:50:02.897Z"
     },
-    "height": 976556,
-    "noteLeaves": 10263,
-    "liveTriples": 3841,
-    "cbtcLockTriples": 25,
+    "height": 976609,
+    "noteLeaves": 10273,
+    "liveTriples": 3837,
+    "cbtcLockTriples": 24,
     "pendingDeposits": 160,
     "pendingDepositRecords": [
       {
@@ -880,7 +851,7 @@
       }
     ],
     "foldedCrossoutCount": "35",
-    "cbtcBackingSats": "19126200",
+    "cbtcBackingSats": "19066200",
     "amm": {
       "poolId": "0xaa3eab26215844c32ba27ed51413c48f881b4c605a233a5ccd169517bf33eb79",
       "reserveA": "10376",
